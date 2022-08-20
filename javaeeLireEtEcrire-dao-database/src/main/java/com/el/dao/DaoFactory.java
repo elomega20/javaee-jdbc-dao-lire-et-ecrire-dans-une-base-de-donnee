@@ -31,7 +31,7 @@ public class DaoFactory {
 
 		}
 
-		DaoFactory instance = new DaoFactory("jdbc:mysql://localhost:3306/javaee", "root", "");
+		DaoFactory instance = new DaoFactory("jdbc:mysql://localhost:3306/javaee", "root", "root");
 		return instance;
 	}
 
