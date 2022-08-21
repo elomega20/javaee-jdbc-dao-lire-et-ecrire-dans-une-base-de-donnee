@@ -9,6 +9,13 @@
 <title>modelDao</title>
 </head>
 <body>
+    
+    <c:if test="${ !empty erreur}">
+        <p style="color:red;">
+            <c:out value="${ erreur }" />
+        </p>
+    </c:if>
+
 	<form method="post" action="vue">
 		<p>
 			<label for="nom">Nom : </label> <input type="text" name="nom"
