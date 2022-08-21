@@ -13,3 +13,12 @@ mysql-connector-java-8.0.30 qui est le drive JDBC pour l'interaction du programm
 
 ici nous avons utiliser le model DAO (Data Access object) pour separer le SQL du model.
 Cela facilite la maintenance et si on le souhaite d'implementer la meme interface pour plusieurs systeme de stockage different.
+
++ Le javabean Utilisateur.java contient notre model.
++ Le fichier MyServlet.java est notre servlet.
++ Le fichier vue.jsp est notre vue.
++ Le fichier DaoFactory.java gère la connection a la base.
++ Le fichier UtilisateurDao.java est notre interface et contient la déclaration de la methode ajouter() et lister().
++ Le fichier UtilisateurDaoImplementation.java implemente notre interface UtilisateurDao.
++ Le fichier BeanException.java gère les exceptions liés a la classe Utilisateur (ici seulement la methode setNom()).
++ Le fichier DaoException.java gère les exceptions liés a la classe UtilisateurDaoImplementation.
